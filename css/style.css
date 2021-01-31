@@ -26,7 +26,17 @@ p {
   line-height: 31px;
   padding: 32px;
 }
-
+button {
+  background: #FFCC00;
+  border: 3px solid #FFCC00;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 8px 24px;
+  font-size: 14pt;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  font-weight: 700;
+}
 /* NAVIGATION FOR HEADER AND FOOTER */
 
 #navBar {
@@ -161,7 +171,7 @@ p {
     'item3 item4';
 }
 .workGrid img {
-  height: 376px;
+  height: 375px;
   display: inline-block;
   float: right;
   padding: 32px;
@@ -274,21 +284,8 @@ p {
 }
 
 /* Media Query */
-@media only screen and (max-width: 600px){
-  .myWork {
-    display: grid;
-    flex-direction: column;
-  }
-  .workGrid {
-    display: grid;
-    flex-direction: column;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas:
-     'item 1'
-     'item 2'
-     'item 3'
-     'item 4';
-    
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
   }
 }
