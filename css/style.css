@@ -154,6 +154,17 @@ p {
 }
 .workGrid {
   display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'item1 item2'
+    'item3 item4';
+}
+.workGrid img {
+  height: 376px;
+  display: inline-block;
+  float: right;
+  padding: 32px;
 }
 .myWork h4 {
   font-family: 'Libre Baskerville', serif;
@@ -264,11 +275,15 @@ p {
 
 /* Media Query */
 @media only screen and (max-width: 600px){
-  .item {
+  .myWork {
     display: grid;
     flex-direction: column;
-    grid-template-areas: 'camp monster monster';
-    grid-template-rows: 25% 25% 25%;
-    grid-template-columns: ;
+    grid-template-areas:
+     'item 1'
+     'item 2'
+     'item 3'
+     'item 4';
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
   }
 }
